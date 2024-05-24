@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0%;
+    background-color: black;
+
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-inline: 22px;
+    color:white ;
+    font-size: 22px;
+}
+ul li a:hover{
+    color: purple;
+}
+.logo{
+    font-size: 22px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 111px;
+}
+.mainText{
+    margin-top: 84px;
+    /* margin-left: 20px; */
+}
+.mainText h1{
+    font-size: 68px;
+}
+.mainText p{
+    font-size: 17px;
+    margin-top: 22px;
+}
+.mainText h3{
+    font-size: 26px;
+}
+.mainText button{
+    width: 220px;
+    height: 40px;
+    background-color: purple;
+    color: white;
+    border: 4px;
+    border-radius: 10px;
+    margin-top: 22px;
+    font-size: 20px;
+}
+.main img{
+    width: 700px;
+}
+.head{
+    text-align: center;
+    padding: 88px;
+}
+
+
+.sobre{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 83px;
+    justify-content: center;
+    padding: 22px;
+}
+#yt{
+    color: purple;
+}
+.sobre img{
+    width: 315px;
+    height: 300px;
+    border-radius: 50%;
+    border: 6px solid purple;
+    
+}
+.sobreText{
+    margin-top: 22px;
+}
+.sobre p{
+    margin-top: 22px;
+    font-size: 18px;
+}
+.sobre h2{
+    font-size: 46px;
+}
+
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 11px;
+     
+}
+.btns button{
+    padding: 9px;
+    font-size: 20px;
+    border: none;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.btns button:hover{
+    background-color: grey;
+
+}
+.habilidadesCard{
+    width: 300px;
+    padding: 22px;
+    text-align: center;
+    background-color: grey;
+    margin-top: 22px;
+    margin-inline: 22px;
+}
+.habilidadesCard i{
+    font-size: 63px;
+}
+.habilidadesCard h2{
+    margin-top: 22px;
+}
+.habilidades p{
+    margin-top: 22px;
+}
+.habilidades button{
+    margin-top: 22px;
+    width: 90px;
+    height: 33px;
+    background-color: purple;
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+}
+.trabalhos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    flex-wrap: wrap;
+}
+.trabalhosCard{
+    margin-inline: 22px;
+    margin-top: 42px;
+    text-align: center;
+}
+
+.imgprojetos {
+    width: 300px;
+    height: 250px;
+} 
+.trabalhosCard p{
+    margin-top: 11px;
+}
+.trabalhosCard a{
+    padding: 6px 22px;
+    background-color: purple;
+    text-decoration: none;
+    position: relative;
+    top: 12px;
+}
+.trabalhos img{
+    width: 560px;
+    border-radius: 4px;
+}
+
+.projetoslink {
+    color: white;
+}
+.contato{
+    width: 400px;
+    margin: auto;
+    background-color: #808080;
+    padding: 22px;
+    text-align: center;
+
+}
+.contato input{
+    width: 90%;
+    font-size: 18px;
+    padding: 11px;
+    margin-top: 11px;
+    height: 13px;
+}
+#msg{
+    width: 90%;
+    margin-top: 12px;
+    padding: 11px;
+    font-size: 18px;
+}
+.contato button{
+    width: 100px;
+    height: 36px;
+    border: none;
+    background-color: purple;
+    margin-top: 22px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+.icons{
+    text-align: center;
+    font-size: 42px;
+    cursor: pointer;
+}
+.botaocv {
+    text-decoration: none;
+    font-weight: 10px;
+    color: white;
+}
+
+
+.imgithub {
+    width: 60px;
+}
+.footer{
+    padding: 33px;
+    margin-top: 22px;
+
+}
+.text p{
+    text-align: center;
+    cursor: pointer;
+    margin-top: 22px;
+}
+#bar{
+    display: none;
+    font-size: 26px;
+}
+
+.imgprog {
+    width: 200px;
+    height: 150px;
+    top: 300px;
+}
+
+@media screen and (max-width:1100px){
+    .main{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:660px){
+    .mainText h1{
+        font-size: 33px;
+    }
+    .main img{
+        width: 90%;
+    }
+    .mainText p{
+        font-size: 14px;
+    }
+    .habilidadesCard{
+        width: 70%;
+    }
+    .trabalhosCard img{
+        width: 80%;
+    }
+    .contato{
+        width: 80%;
+    }
+    ul{
+        display: none;
+    }
+    #bar{
+        display: block;
+    }
+  
+}
+
+@media screen and (max-width:410px){
+      .sobre{
+        text-align: center;
+    }
+    .sobre img{
+        width: 90%;
+        height: 250px;
+    }
+}
+</style>
+</head>
+<body>
+     <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Portifólio</h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#trabalhos">Trabalhos</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+            <i id="bar" class="fa-solid fa-bars"></i>
+
+        </nav>
+
+        <div class="main">
+             
+            <div class="mainText">
+                <h3>Olá, Eu Sou</h3>
+                <h1>Larissa de Oliveira</h1>
+                <p>Olá a todos, sou uma estudante de Programação.<br>Com conhecimento em HTML, CSS, JavaScript, React, CSS e Bootstrap.</p>
+                <button><a class="botaocv" href="Curriculo.pdf" target="_blank" onclick="downlodeBtn()">Acesse meu currículo</a></button>
+
+            </div>
+            
+        </div>
+
+        <div id="sobre">
+            <div class="head">
+                <h1>Sobre mim</h1>
+            </div>
+            <div class="sobre">
+                <div class="sobreText">
+                     <h2>Larissa de Oliveira</h2>
+                     <p>Desenvolvedora Front-End</p>
+                     <p id="yt">Estudante de Desenvolvimento de Sistemas</p>
+                     <p>Olá, tenho como objetivo demonstrar minhas habilidades
+                      e conhecimentos <br>
+                      através deste portifólio.
+                      <p>Sou grande admiradoradora da área de tecnologia e pretendo seguir nesta área, <br>
+                      me considero proativa, sempre estando disposta a enfrentar desafios e que  <br>
+                      preza pelo bom trabalho em equipe. </p>
+                </div>
+                <img src="img1.jfif" alt="">
+            </div>
+        </div>
+
+        <div id="habilidades">
+            
+            <div class="head">
+                <h1>Habilidades e Competências</h1>
+            </div>
+            <div class="btns">
+                <button class="categoria" id="tudo">Tudo</button>
+                <button class="categoria" id="soft">Soft Skills</button>
+                <button class="categoria" id="hard">Hard Skills</button>
+                <button class="categoria" id="conhecimento">Conhecimento</button>
+            </div>
+            <div class="habilidades">
+              
+                <div class="habilidadesCard" id="softs">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Soft Skills</h2>
+                    <p>Comunicação, flexibilidade, proatividade, criatividade e trabalho em equipe.</p>
+                   
+                </div>
+                <div class="habilidadesCard" id="hards">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Hard Skills</h2>
+                    <p>Conhecimento em HTML5, C#, JavaScript, Banco de Dados, CSS, React.</p>
+                    
+                </div>
+                <div class="habilidadesCard" id="conhecimentos">
+                    <i class="fa-solid fa-school"></i>
+                    <h2>Conhecimento</h2>
+                    <p>Cursando Ensino Médio Técnico em Desenvolvimento de Sistemas</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="trabalhos">
+            <div class="head">
+                <h1>Meus trabalhos</h1>
+            </div>
+            <div class="trabalhos">
+                <div class="trabalhosCard">
+                    <img class="imgprojetos"  src="site1.JPG" alt="">
+                    <h2>Site de Roupas</h2>
+                    <p>Criação de site reponsivo de uma loja de roupas StreetWear com HTML, CSS e <br>
+                        JavaScript. </p>
+                    <a class="projetoslink" href="https://larissasantos2.github.io/Street-Style/" target="_blank">Cheque o projeto</a>
+                </div>
+                <div class="trabalhosCard">
+                    <img class="imgprojetos" src="site3.JPG" alt="">
+                    <h2>Relógio Digital</h2>
+                    <p>Criação de relógio digital com HTML, CSS e JavaScript</p>
+                    <a class="projetoslink" href="https://larissasantos2.github.io/relogiodigital/" target="_blank">Cheque o projeto</a>
+                </div>
+                <div class="trabalhosCard">
+                    <img class="imgprojetos"  src="site2.JPG" alt="">
+                    <h2>Calculadora de IMC</h2>
+                    <p>Calculadora de IMC com HTML, CSS e JavaScript</p>
+                    <a class="projetoslink" href="https://larissasantos2.github.io/Calculadora-IMC/" target="_blank">Cheque o projeto</a>
+                </div>
+                <div class="trabalhosCard">
+                    <img class="imgprojetos" src="site4.JPG" alt="">
+                    <h2>Calculadora</h2>
+                    <p>Calculadora feita com HTML, CSS e JavaScript</p>
+                    <a class="projetoslink" href="https://youtu.be/R3dnjk4yRbQ?si=VyG3v_921aeiCAaM" target="_blank">Cheque o projeto</a>
+                </div>
+            </div>
+
+            <div id="contato">
+                <div class="head">
+                    <h1>Entre em contato</h1>
+                </div>
+                <div class="contato">
+                    <input type="text" placeholder="Insira seu nome" id="name">
+                    <input type="Email" placeholder="Insira seu e-mail" id="email">
+                    <textarea  rows="6" cols="35" placeholder="Sua mensagem..."  id="msg"></textarea>
+                    <button id="submit">Enviar</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="icons">
+                    <a href="https://github.com/LarissaSantos2"><img class="imgithub" src="github.png" alt=""></a>
+                </div>
+                <div class="text">
+                    <p>Portifólio Larissa de Oliveira</p>
+                  
+                </div>
+                 
+            </div>
+        </div>
+     </div>
+     <script>
+        let btns = document.querySelectorAll(".categoria");
+let submit = document.getElementById("submit");
+
+btns.forEach(function(btn){
+    btn.addEventListener("click", function(){
+         
+        if(btn.attributes.id.value == "soft"){
+            document.getElementById("hards").style.display="none";
+            document.getElementById("conhecimentos").style.display="none";
+            document.getElementById("softs").style.display="block";
+
+
+        }
+        if(btn.attributes.id.value == "hard"){
+            
+            document.getElementById("softs").style.display="none";
+            document.getElementById("conhecimentos").style.display="none";
+            document.getElementById("hards").style.display="block";
+
+        }
+        if(btn.attributes.id.value == "conhecimento"){
+            document.getElementById("hards").style.display="none";
+            document.getElementById("softs").style.display="none";
+            document.getElementById("conhecimentos").style.display="block";
+
+        }
+        if(btn.attributes.id.value == "tudo"){
+            document.getElementById("hards").style.display="block";
+            document.getElementById("softs").style.display="block";
+            document.getElementById("conhecimentos").style.display="block";
+
+        }
+             
+    })
+})
+function downlodeBtn(){
+    alert("Currículo baixado")
+}
+
+submit.addEventListener("click", function(){
+    let email = document.getElementById("email");
+    let name = document.getElementById("name");
+    let msg = document.getElementById("msg");
+
+    if(email.value == "" || name.value == "" || msg.value == "" ){
+        alert("Preencha os campos")
+    }else{
+        alert("Formulário enviado com sucesso")
+    }
+
+})
+     </script>
+</body>
+</html>
